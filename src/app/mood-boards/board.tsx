@@ -58,7 +58,7 @@ export function MoodBoard({
   images: Photo[];
 }) {
   return (
-    <main className={`min-h-full px-5 py-14 sm:px-12 sm:py-20 lg:px-24 ${className}`}>
+    <main className={`min-h-full flex-1 px-5 py-14 sm:px-12 sm:py-20 lg:px-24 ${className}`}>
       <header className="mx-auto mb-14 flex max-w-7xl flex-wrap items-end justify-between gap-4">
         <div>
           <Link
