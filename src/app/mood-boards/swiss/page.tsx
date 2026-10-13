@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Found, Generated, MoodBoard, photoFinder } from "../board";
 import images from "./images.json";
 import {
   BigNumeral,
@@ -18,112 +17,55 @@ import {
 
 export const metadata: Metadata = { title: "Swiss · Mood Board" };
 
-type Photo = (typeof images)[number];
-
-function Found({ img }: { img: Photo }) {
-  return (
-    <Image
-      src={img.src}
-      alt={img.alt}
-      width={img.width}
-      height={img.height}
-      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-      className="w-full"
-    />
-  );
-}
-
-function Generated({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="relative">
-      {children}
-      <span className="absolute right-1.5 top-1 text-xs text-[#e30613]" aria-label="Generated">
-        ✦
-      </span>
-    </div>
-  );
-}
-
-const byName = (name: string) => images.find((i) => i.src.includes(name))!;
+const RED = "#e30613";
+const photo = photoFinder(images);
+const G = ({ children }: { children: React.ReactNode }) => (
+  <Generated mark={RED}>{children}</Generated>
+);
 
 // Order is deliberate: found and generated pieces alternate so the
 // columns mix photos, type, color, and interface studies.
-const board: React.ReactNode[] = [
-  <Found key="clock" img={byName("railway-clock-zurich")} />,
-  <Generated key="event"><EventPoster /></Generated>,
-  <Found key="hofmann1" img={byName("hofmann-gubler")} />,
-  <Generated key="type"><TypeSpecimen /></Generated>,
-  <Found key="corbusier" img={byName("pavillon-le-corbusier")} />,
-  <Generated key="burst"><LineBurst /></Generated>,
-  <Found key="helvetica" img={byName("helvetica-specimen")} />,
-  <Found key="braun1" img={byName("braun-et66")} />,
-  <Generated key="swatches"><Swatches /></Generated>,
-  <Found key="calatrava" img={byName("calatrava-milwaukee")} />,
-  <Generated key="wayfinding"><Wayfinding /></Generated>,
-  <Found key="hofmann2" img={byName("hofmann-japan")} />,
-  <Found key="stair" img={byName("max-bill-endless")} />,
-  <Generated key="grid"><GridStudy /></Generated>,
-  <Found key="subway" img={byName("nyc-subway")} />,
-  <Generated key="hierarchy"><Hierarchy /></Generated>,
-  <Found key="akz1" img={byName("akzidenz-specimen")} />,
-  <Found key="clock2" img={byName("chaux-de-fonds")} />,
-  <Generated key="circle"><CirclePoster /></Generated>,
-  <Found key="stadelhofen" img={byName("calatrava-stadelhofen")} />,
-  <Generated key="timetable"><Timetable /></Generated>,
-  <Found key="hofmann3" img={byName("hofmann-4")} />,
-  <Found key="vitra" img={byName("vitra")} />,
-  <Generated key="ui"><UiPieces /></Generated>,
-  <Found key="bill2" img={byName("max-bill-bottrop")} />,
-  <Generated key="numeral"><BigNumeral /></Generated>,
-  <Found key="braun2" img={byName("braun-turntable")} />,
-  <Found key="akz2" img={byName("akzidenz-extralight")} />,
+const items = [
+  <Found key="clock" img={photo("railway-clock-zurich")} />,
+  <G key="event"><EventPoster /></G>,
+  <Found key="hofmann1" img={photo("hofmann-gubler")} />,
+  <G key="type"><TypeSpecimen /></G>,
+  <Found key="corbusier" img={photo("pavillon-le-corbusier")} />,
+  <G key="burst"><LineBurst /></G>,
+  <Found key="helvetica" img={photo("helvetica-specimen")} />,
+  <Found key="braun1" img={photo("braun-et66")} />,
+  <G key="swatches"><Swatches /></G>,
+  <Found key="calatrava" img={photo("calatrava-milwaukee")} />,
+  <G key="wayfinding"><Wayfinding /></G>,
+  <Found key="hofmann2" img={photo("hofmann-japan")} />,
+  <Found key="stair" img={photo("max-bill-endless")} />,
+  <G key="grid"><GridStudy /></G>,
+  <Found key="subway" img={photo("nyc-subway")} />,
+  <G key="hierarchy"><Hierarchy /></G>,
+  <Found key="akz1" img={photo("akzidenz-specimen")} />,
+  <Found key="clock2" img={photo("chaux-de-fonds")} />,
+  <G key="circle"><CirclePoster /></G>,
+  <Found key="stadelhofen" img={photo("calatrava-stadelhofen")} />,
+  <G key="timetable"><Timetable /></G>,
+  <Found key="hofmann3" img={photo("hofmann-4")} />,
+  <Found key="vitra" img={photo("vitra")} />,
+  <G key="ui"><UiPieces /></G>,
+  <Found key="bill2" img={photo("max-bill-bottrop")} />,
+  <G key="numeral"><BigNumeral /></G>,
+  <Found key="braun2" img={photo("braun-turntable")} />,
+  <Found key="akz2" img={photo("akzidenz-extralight")} />,
 ];
 
 export default function SwissMoodBoard() {
   return (
-    <main
-      className="min-h-full bg-[#e9e9e6] px-5 py-14 text-[#111] sm:px-12 sm:py-20 lg:px-24"
-      style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
-    >
-      <header className="mx-auto mb-14 flex max-w-7xl flex-wrap items-end justify-between gap-4">
-        <div>
-          <Link href="/" className="text-xs font-bold uppercase tracking-wider underline">
-            ← Hub
-          </Link>
-          <h1 className="mt-3 text-6xl font-bold leading-none tracking-tighter">Swiss</h1>
-          <p className="mt-2 text-base">Grid · Grotesk · One red</p>
-        </div>
-        <p className="text-xs">
-          <span className="text-[#e30613]">✦</span> generated by my agent · {board.length} artifacts
-        </p>
-      </header>
-
-      <div className="mx-auto max-w-7xl columns-1 gap-8 sm:columns-2 lg:columns-3 [&>*]:mb-8 [&>*]:break-inside-avoid">
-        {board}
-      </div>
-
-      <footer className="mx-auto mt-20 max-w-7xl border-t border-black pt-4 text-[11px] leading-relaxed">
-        <p className="mb-2 font-bold uppercase tracking-wider">Image credits</p>
-        <ul className="columns-1 gap-6 sm:columns-2">
-          {images.map((img) => (
-            <li key={img.src}>
-              <a href={img.source} className="underline">
-                {img.alt}
-              </a>
-              {" · "}
-              {img.author}
-              {" · "}
-              {img.licenseUrl ? (
-                <a href={img.licenseUrl} className="underline">
-                  {img.license}
-                </a>
-              ) : (
-                img.license
-              )}
-            </li>
-          ))}
-        </ul>
-      </footer>
-    </main>
+    <MoodBoard
+      title="Swiss"
+      tagline="Grid · Grotesk · One red"
+      mark={RED}
+      rule="#111"
+      className="bg-[#e9e9e6] text-[#111] font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
+      items={items}
+      images={images}
+    />
   );
 }

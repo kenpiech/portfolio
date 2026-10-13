@@ -1,0 +1,172 @@
+[
+  {
+    "src": "/mood-boards/pixel/landscape.jpg",
+    "alt": "Pixel art landscape with a sun and trees",
+    "width": 960,
+    "height": 960,
+    "author": "Fahmirayan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Landscape_pixel_art.png"
+  },
+  {
+    "src": "/mood-boards/pixel/isometric-city.jpg",
+    "alt": "Isometric pixel art city street",
+    "width": 1280,
+    "height": 1280,
+    "author": "Propeterson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Isometric_Pixel_Art_by_Peterson_Freitas_(enlarged).gif"
+  },
+  {
+    "src": "/mood-boards/pixel/birds.jpg",
+    "alt": "Pixel art birds",
+    "width": 500,
+    "height": 500,
+    "author": "Northern Pirozhki",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Bird_Pixel_art_1.png"
+  },
+  {
+    "src": "/mood-boards/pixel/game-boy.jpg",
+    "alt": "Original Nintendo Game Boy",
+    "width": 1280,
+    "height": 2048,
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/nes.jpg",
+    "alt": "Nintendo Entertainment System console",
+    "width": 1280,
+    "height": 917,
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Entertainment-System-NES-Console-FL.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/marble-madness-cabinet.jpg",
+    "alt": "Marble Madness arcade cabinet",
+    "width": 1280,
+    "height": 1707,
+    "author": "Halcyanide",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Marble_Madness_arcade_cabinet.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/commodore-64.jpg",
+    "alt": "Commodore 64 computer",
+    "width": 1280,
+    "height": 723,
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/c64-boot-screen.jpg",
+    "alt": "Commodore 64 BASIC boot screen",
+    "width": 500,
+    "height": 334,
+    "author": "Retro Devops",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Commodore_64_Splash.png"
+  },
+  {
+    "src": "/mood-boards/pixel/zx-spectrum-graphics.jpg",
+    "alt": "ZX Spectrum graphics showcase",
+    "width": 256,
+    "height": 192,
+    "author": "Z80Spectrum",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:ZX_Spectrum_graphics_showcase_in_pixel-perfect_graphics.png"
+  },
+  {
+    "src": "/mood-boards/pixel/green-led-matrix.jpg",
+    "alt": "Green 7x5 dot matrix LED display",
+    "width": 1280,
+    "height": 896,
+    "author": "Mister rf",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:HDLG-2416_7_x_5_Dot_Matrix_Green_LED_Display.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/highest-scores.jpg",
+    "alt": "Pinball dot matrix display reading Highest Scores",
+    "width": 1280,
+    "height": 853,
+    "author": "ElHeineken",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Pinball_Dot_Matrix_Display_-_Demolition_Man.JPG"
+  },
+  {
+    "src": "/mood-boards/pixel/led-macro.jpg",
+    "alt": "Macro photo of red LED matrix",
+    "width": 1280,
+    "height": 1945,
+    "author": "Janke",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Macro_photo_of_LED_matrix.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/atari-2600.jpg",
+    "alt": "Atari 2600 console and joystick",
+    "width": 1280,
+    "height": 747,
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/tamagotchi.jpg",
+    "alt": "Tamagotchi virtual pet",
+    "width": 500,
+    "height": 386,
+    "author": "Tomasz Sienicki",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tamagotchi_0124_ubt.jpeg"
+  },
+  {
+    "src": "/mood-boards/pixel/flipper-zero.jpg",
+    "alt": "Flipper Zero showing a pixel interface",
+    "width": 1280,
+    "height": 708,
+    "author": "Siarhei V",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Flipper_Zero_displaying_tamagotchi_interface_on_granite_surface.jpg"
+  },
+  {
+    "src": "/mood-boards/pixel/mac-bitmap-fonts.jpg",
+    "alt": "Original Macintosh bitmap fonts",
+    "width": 381,
+    "height": 237,
+    "author": "Chmod007 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Original_Mac_fonts.png"
+  },
+  {
+    "src": "/mood-boards/pixel/zx-spectrum.jpg",
+    "alt": "Sinclair ZX Spectrum 48K",
+    "width": 1280,
+    "height": 941,
+    "author": "Bill Bertram",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "source": "https://commons.wikimedia.org/wiki/File:ZXSpectrum48k.jpg"
+  }
+]
