@@ -27,7 +27,7 @@ function Found({ img }: { img: Photo }) {
       alt={img.alt}
       width={img.width}
       height={img.height}
-      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
       className="w-full"
     />
   );
@@ -82,10 +82,10 @@ const board: React.ReactNode[] = [
 export default function SwissMoodBoard() {
   return (
     <main
-      className="min-h-full bg-[#e9e9e6] px-4 py-10 text-[#111] sm:px-8"
+      className="min-h-full bg-[#e9e9e6] px-5 py-14 text-[#111] sm:px-12 sm:py-20 lg:px-24"
       style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
     >
-      <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <header className="mx-auto mb-14 flex max-w-7xl flex-wrap items-end justify-between gap-4">
         <div>
           <Link href="/" className="text-xs font-bold uppercase tracking-wider underline">
             ← Hub
@@ -98,11 +98,11 @@ export default function SwissMoodBoard() {
         </p>
       </header>
 
-      <div className="columns-2 gap-3 sm:columns-3 lg:columns-4 [&>*]:mb-3 [&>*]:break-inside-avoid">
+      <div className="mx-auto max-w-7xl columns-1 gap-8 sm:columns-2 lg:columns-3 [&>*]:mb-8 [&>*]:break-inside-avoid">
         {board}
       </div>
 
-      <footer className="mt-12 border-t border-black pt-4 text-[11px] leading-relaxed">
+      <footer className="mx-auto mt-20 max-w-7xl border-t border-black pt-4 text-[11px] leading-relaxed">
         <p className="mb-2 font-bold uppercase tracking-wider">Image credits</p>
         <ul className="columns-1 gap-6 sm:columns-2">
           {images.map((img) => (
