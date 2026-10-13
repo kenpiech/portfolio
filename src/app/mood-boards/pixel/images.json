@@ -20,16 +20,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Isometric_Pixel_Art_by_Peterson_Freitas_(enlarged).gif"
   },
   {
-    "src": "/mood-boards/pixel/birds.jpg",
-    "alt": "Pixel art birds",
-    "width": 500,
-    "height": 500,
-    "author": "Northern Pirozhki",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Bird_Pixel_art_1.png"
-  },
-  {
     "src": "/mood-boards/pixel/game-boy.jpg",
     "alt": "Original Nintendo Game Boy",
     "width": 1280,
@@ -110,16 +100,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Pinball_Dot_Matrix_Display_-_Demolition_Man.JPG"
   },
   {
-    "src": "/mood-boards/pixel/led-macro.jpg",
-    "alt": "Macro photo of red LED matrix",
-    "width": 1280,
-    "height": 1945,
-    "author": "Janke",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Macro_photo_of_LED_matrix.jpg"
-  },
-  {
     "src": "/mood-boards/pixel/atari-2600.jpg",
     "alt": "Atari 2600 console and joystick",
     "width": 1280,
@@ -128,16 +108,6 @@
     "license": "Public domain",
     "licenseUrl": null,
     "source": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg"
-  },
-  {
-    "src": "/mood-boards/pixel/tamagotchi.jpg",
-    "alt": "Tamagotchi virtual pet",
-    "width": 500,
-    "height": 386,
-    "author": "Tomasz Sienicki",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Tamagotchi_0124_ubt.jpeg"
   },
   {
     "src": "/mood-boards/pixel/flipper-zero.jpg",
@@ -160,13 +130,13 @@
     "source": "https://commons.wikimedia.org/wiki/File:Original_Mac_fonts.png"
   },
   {
-    "src": "/mood-boards/pixel/zx-spectrum.jpg",
-    "alt": "Sinclair ZX Spectrum 48K",
+    "src": "/mood-boards/pixel/game-boy-color.jpg",
+    "alt": "Atomic purple Game Boy Color",
     "width": 1280,
-    "height": 941,
-    "author": "Bill Bertram",
-    "license": "CC BY-SA 2.5",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
-    "source": "https://commons.wikimedia.org/wiki/File:ZXSpectrum48k.jpg"
+    "height": 2090,
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Game-Boy-Color-Purple.jpg"
   }
 ]

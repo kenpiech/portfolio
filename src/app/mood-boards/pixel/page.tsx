@@ -17,6 +17,7 @@ import {
   Truck,
   TypeSpecimen,
 } from "./artifacts";
+import { Battle, DexEntry, Overworld, StartMenu } from "./gbc";
 
 export const metadata: Metadata = { title: "Retro Pixel · Mood Board" };
 
@@ -33,7 +34,8 @@ const crisp = "[image-rendering:pixelated]";
 const items = [
   <Found key="scores" img={photo("highest-scores")} />,
   <G key="sub"><Submarine /></G>,
-  <Found key="gameboy" img={photo("game-boy")} />,
+  <Found key="gameboy" img={photo("game-boy.")} />,
+  <G key="overworld"><Overworld /></G>,
   <G key="type"><TypeSpecimen display={display.className} body={body.className} /></G>,
   <Found key="landscape" img={photo("landscape")} className={crisp} />,
   <G key="scores2"><HighScores /></G>,
@@ -43,6 +45,7 @@ const items = [
   <Found key="city" img={photo("isometric-city")} className={crisp} />,
   <G key="dialog"><Dialog body={body.className} /></G>,
   <Found key="flipper" img={photo("flipper-zero")} />,
+  <G key="battle"><Battle /></G>,
   <G key="peaks"><Peaks /></G>,
   <Found key="boot" img={photo("c64-boot-screen")} className={crisp} />,
   <G key="hud"><Hud /></G>,
@@ -53,13 +56,12 @@ const items = [
   <G key="truck"><Truck /></G>,
   <Found key="macfonts" img={photo("mac-bitmap-fonts")} className={crisp} />,
   <G key="buttons"><Buttons /></G>,
-  <Found key="ledmacro" img={photo("led-macro")} />,
-  <Found key="birds" img={photo("birds")} className={crisp} />,
+  <Found key="gbc" img={photo("game-boy-color")} />,
+  <G key="dex"><DexEntry body={body.className} /></G>,
   <G key="dither"><Dither /></G>,
   <Found key="atari" img={photo("atari-2600")} />,
   <G key="icons"><Icons /></G>,
-  <Found key="tamagotchi" img={photo("tamagotchi")} />,
-  <Found key="zx" img={photo("zx-spectrum")} />,
+  <G key="menu"><StartMenu /></G>,
 ];
 
 export default function PixelMoodBoard() {

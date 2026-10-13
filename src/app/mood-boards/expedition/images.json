@@ -60,26 +60,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Landmannalaugar_in_summer_2009_(13).jpg"
   },
   {
-    "src": "/mood-boards/expedition/landmannalaugar-lava.jpg",
-    "alt": "Lava field and colored mountains at Landmannalaugar",
-    "width": 960,
-    "height": 720,
-    "author": "Finn",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "source": "https://commons.wikimedia.org/wiki/File:Landmannalaugar_(Finn).jpg"
-  },
-  {
-    "src": "/mood-boards/expedition/herdubreid.jpg",
-    "alt": "Herðubreið table mountain in the Icelandic highlands",
-    "width": 1280,
-    "height": 851,
-    "author": "Bjarki Sigursveinsson from Ísafjörður, Iceland",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Her%C3%B0ubrei%C3%B0_(4743047173).jpg"
-  },
-  {
     "src": "/mood-boards/expedition/usgs-topo-blue-lakes.jpg",
     "alt": "USGS topographic map of Blue Lakes",
     "width": 500,
@@ -160,13 +140,53 @@
     "source": "https://commons.wikimedia.org/wiki/File:Tomas_Petrecek_-_Running_-_Jeseniky_mountains_2017.jpg"
   },
   {
-    "src": "/mood-boards/expedition/alpine-tent.jpg",
-    "alt": "Backpacking tent among snowy alpine peaks",
+    "src": "/mood-boards/expedition/endurance-pink-glow.jpg",
+    "alt": "The Endurance in pink dawn light, beset in Weddell Sea ice, 1915",
     "width": 1280,
-    "height": 958,
-    "author": "Olympic National Park",
+    "height": 960,
+    "author": "Frank Hurley",
     "license": "Public domain",
     "licenseUrl": null,
-    "source": "https://commons.wikimedia.org/wiki/File:Backpacking_alpine_mountains_peaks_tent_camping_visitor_nps_photo_(22901840336).jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:The_%27Endurance%27,_The_pink_glow_of_the_rising_sun_shining_on_a_pressure_ridge,_1915_-_photographed_by_Frank_Hurley_(3534602329).jpg"
+  },
+  {
+    "src": "/mood-boards/expedition/endurance-night.jpg",
+    "alt": "The Endurance lit by flash at night in the ice, 1915",
+    "width": 1280,
+    "height": 1731,
+    "author": "Frank Hurley",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Endurance_night_1915_SLNSW.jpg"
+  },
+  {
+    "src": "/mood-boards/expedition/endurance-full-sail.jpg",
+    "alt": "The Endurance under full sail, trapped in pack ice",
+    "width": 1280,
+    "height": 1771,
+    "author": "Frank Hurley",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg"
+  },
+  {
+    "src": "/mood-boards/expedition/endurance-pack-ice.jpg",
+    "alt": "The Endurance seen across ridged pack ice",
+    "width": 1280,
+    "height": 959,
+    "author": "Frank Hurley",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Endurance_trapped_in_pack_ice.jpg"
+  },
+  {
+    "src": "/mood-boards/expedition/endurance-antarctica.jpg",
+    "alt": "The Endurance in Antarctica, 1915, Paget color plate",
+    "width": 1280,
+    "height": 959,
+    "author": "Frank Hurley",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "source": "https://commons.wikimedia.org/wiki/File:Endurance_in_Antarctica,_1915_Hurley_a090007.jpg"
   }
 ]
