@@ -3,7 +3,7 @@ import Link from "next/link";
 const styles = [
   { slug: "swiss", name: "Swiss" },
   { slug: "pixel", name: "Retro Pixel" },
-  { slug: "personal", name: "Personal" },
+  { slug: "expedition", name: "Expedition" },
 ];
 
 export default function Hub() {
