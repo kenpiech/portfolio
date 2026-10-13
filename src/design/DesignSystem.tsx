@@ -20,7 +20,7 @@ import {
 } from "./ui";
 
 const FONT_NAMES: Record<string, string> = {
-  "var(--font-inter-tight)": "Inter Tight",
+  '"Helvetica Neue", Helvetica, Arial, sans-serif': "Helvetica",
   "var(--font-press-start)": "Press Start 2P",
   "var(--font-vt323)": "VT323",
   "var(--font-libre-caslon)": "Libre Caslon Text",

@@ -47,6 +47,9 @@ export type Theme = {
   tabPrefix: string; // drawn before the selected tab
 };
 
+// System Helvetica: Macs and iPhones have it; Windows and Android substitute Arial.
+const HELVETICA = '"Helvetica Neue", Helvetica, Arial, sans-serif';
+
 export const swiss: Theme = {
   slug: "swiss",
   name: "Swiss",
@@ -69,10 +72,10 @@ export const swiss: Theme = {
     disabledText: "#8a8a85",
   },
   type: {
-    display: { font: "var(--font-inter-tight)", size: 64, weight: 700, lineHeight: 1, tracking: "-0.04em" },
-    heading: { font: "var(--font-inter-tight)", size: 24, weight: 700, lineHeight: 1.2, tracking: "-0.02em" },
-    body: { font: "var(--font-inter-tight)", size: 16, weight: 400, lineHeight: 1.5, tracking: "0" },
-    label: { font: "var(--font-inter-tight)", size: 11, weight: 700, lineHeight: 1.2, tracking: "0.08em", transform: "uppercase" },
+    display: { font: HELVETICA, size: 64, weight: 700, lineHeight: 1, tracking: "-0.04em" },
+    heading: { font: HELVETICA, size: 24, weight: 700, lineHeight: 1.2, tracking: "-0.02em" },
+    body: { font: HELVETICA, size: 16, weight: 400, lineHeight: 1.5, tracking: "0" },
+    label: { font: HELVETICA, size: 11, weight: 700, lineHeight: 1.2, tracking: "0.08em", transform: "uppercase" },
   },
   shape: {
     radius: 0,
