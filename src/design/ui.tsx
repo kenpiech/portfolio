@@ -230,11 +230,13 @@ export function Modal({
   onClose,
   children,
   label,
+  variant = "center",
 }: {
   open: boolean;
   onClose: () => void;
   children: React.ReactNode;
   label: string;
+  variant?: "center" | "sheet";
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -249,7 +251,7 @@ export function Modal({
       aria-label={label}
       onClose={onClose}
       onClick={(e) => e.target === ref.current && onClose()}
-      className="ui-modal"
+      className={variant === "sheet" ? "ui-modal ui-sheet" : "ui-modal"}
     >
       {children}
     </dialog>

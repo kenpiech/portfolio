@@ -14,6 +14,7 @@ export type Project = {
   team?: string;
   visibility: "public" | "private";
   link?: string;
+  highlights: string[];
 };
 
 export const projects: Project[] = [
@@ -28,6 +29,13 @@ export const projects: Project[] = [
     context: "UChicago MPCS",
     team: "with Nic",
     visibility: "private",
+    highlights: [
+      "REST API in FastAPI to register functions, launch tasks, and fetch status and results.",
+      "Redis stores payloads and task state; a pub/sub channel tells the dispatcher about new work.",
+      "Three execution modes: local, pull workers over ZeroMQ REQ/REP, and push workers over ROUTER/DEALER.",
+      "Worker failures are detected by timeout and covered by fault-tolerance tests.",
+      "Technical, testing, and performance reports compare the modes under load.",
+    ],
   },
   {
     slug: "msh",
@@ -38,6 +46,11 @@ export const projects: Project[] = [
     year: "2026",
     context: "UChicago MPCS",
     visibility: "private",
+    highlights: [
+      "Runs commands in foreground and background jobs, with job control.",
+      "Signal handlers for interrupts and finished child processes.",
+      "Organized as separate C modules for the shell loop, jobs, and signals, with a test suite.",
+    ],
   },
   {
     slug: "password-cracker",
@@ -49,6 +62,11 @@ export const projects: Project[] = [
     year: "2026",
     context: "UChicago MPCS",
     visibility: "private",
+    highlights: [
+      "A start script launches cracker services across a range of ports.",
+      "The client splits the search space into chunks and spreads them across the services.",
+      "Unit tests, a testing report, and a performance analysis with plots.",
+    ],
   },
   {
     slug: "electricity-supply-security",
@@ -61,6 +79,11 @@ export const projects: Project[] = [
     context: "Independent research",
     visibility: "public",
     link: "https://github.com/kp145322/electricity_supply_security",
+    highlights: [
+      "Combined data from BP and Our World in Data, GIIGNL, Korea’s Ministry of Trade, Industry and Energy, the U.S. EIA, and the World Bank.",
+      "Cleaned the datasets and joined them in R using ISO country codes.",
+      "Compared historical supply security with projections under Korea’s 9th Basic Plan for electricity.",
+    ],
   },
 ];
 
