@@ -60,7 +60,7 @@ function Hero() {
   const facts = [
     ["Now", "Technical threat investigator at Meta"],
     ["Studying", "MS in Computer Science, University of Chicago"],
-    ["Before", "Intelligence analyst, United States Government. Submarine officer and nuclear engineer, U.S. Navy."],
+    ["Before", "Intelligence analyst. Submarine officer and nuclear engineer, U.S. Navy"],
   ];
   return (
     <header id="top" className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-10 sm:pt-24">
