@@ -306,6 +306,7 @@ function Footer() {
         <div className="flex flex-wrap gap-x-8 gap-y-3">
           <TextLink href="https://github.com/kenpiech">GitHub</TextLink>
           <TextLink href="https://github.com/kp145322">Early work on GitHub</TextLink>
+          <TextLink href="https://www.linkedin.com/in/kenneth-piech/">LinkedIn</TextLink>
           <TextLink href="/">Design process</TextLink>
         </div>
         <p className="ui-label ui-muted">© 2026 Ken Piech</p>
