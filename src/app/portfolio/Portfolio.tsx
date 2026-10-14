@@ -3,15 +3,31 @@
 import { useState } from "react";
 import { categories, projects, type Project } from "@/content/projects";
 import { swiss, themeVars } from "@/design/themes";
-import { Badge, Button, Chip, Modal, TextInput, TextLink } from "@/design/ui";
+import { Badge, Button, Chip, Modal, TextLink } from "@/design/ui";
 
 // The portfolio, built from the Swiss design system. Two interactions:
 // filter chips over the work, and a case-study sheet for each project.
-// The contact form is a front-end demo: nothing is sent or stored.
+// Get in touch goes to LinkedIn.
 
 const GRID = "grid grid-cols-1 gap-x-8 md:grid-cols-12";
+const LINKEDIN = "https://www.linkedin.com/in/kenneth-piech/";
 
-function Nav({ onContact }: { onContact: () => void }) {
+function ContactLink({ onClick }: { onClick?: () => void }) {
+  return (
+    <a
+      href={LINKEDIN}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={onClick}
+      aria-label="Get in touch on LinkedIn (opens in a new tab)"
+      className="ui-btn ui-btn--primary ui-focusable"
+    >
+      Get in touch ↗
+    </a>
+  );
+}
+
+function Nav() {
   const [menu, setMenu] = useState(false);
   return (
     <nav className="sticky top-0 z-10 border-b border-[var(--c-text)] bg-[var(--c-bg)]">
@@ -22,7 +38,7 @@ function Nav({ onContact }: { onContact: () => void }) {
         <div className="hidden items-center gap-8 sm:flex">
           <TextLink href="#work">Work</TextLink>
           <TextLink href="#about">About</TextLink>
-          <Button onClick={onContact}>Get in touch</Button>
+          <ContactLink />
         </div>
         <Button
           variant="secondary"
@@ -42,14 +58,7 @@ function Nav({ onContact }: { onContact: () => void }) {
           <TextLink href="#about" onClick={() => setMenu(false)}>
             About
           </TextLink>
-          <Button
-            onClick={() => {
-              setMenu(false);
-              onContact();
-            }}
-          >
-            Get in touch
-          </Button>
+          <ContactLink onClick={() => setMenu(false)} />
         </div>
       )}
     </nav>
@@ -213,92 +222,6 @@ function About() {
   );
 }
 
-type FormState = "editing" | "sending" | "sent";
-
-function Contact({ onClose }: { onClose: () => void }) {
-  const [state, setState] = useState<FormState>("editing");
-  const [errors, setErrors] = useState<{ email?: string; message?: string }>({});
-
-  function submit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const email = String(data.get("email") ?? "");
-    const message = String(data.get("message") ?? "");
-    const next = {
-      email: /^\S+@\S+\.\S+$/.test(email) ? undefined : "Enter an email address like name@example.com.",
-      message: message.trim() ? undefined : "Write a short message.",
-    };
-    setErrors(next);
-    if (next.email || next.message) return;
-    setState("sending");
-    setTimeout(() => setState("sent"), 900);
-  }
-
-  return (
-    <div className="ui-panel">
-      <div className="flex items-start justify-between gap-4">
-        <h2 className="ui-heading">Get in touch</h2>
-        <button type="button" onClick={onClose} className="ui-close ui-focusable" aria-label="Close">
-          ×
-        </button>
-      </div>
-      {state === "sent" ? (
-        <div className="mt-6 grid gap-4" role="status">
-          <p className="ui-body ui-status-success">✓ Message ready</p>
-          <p className="ui-body ui-muted">
-            This form is a demo for now, so nothing was sent or saved.
-          </p>
-          <div>
-            <Button variant="secondary" onClick={onClose}>
-              Close
-            </Button>
-          </div>
-        </div>
-      ) : (
-        <form noValidate onSubmit={submit} className="mt-6 grid gap-5">
-          <TextInput label="Name" name="name" autoComplete="name" />
-          <div className="grid gap-1.5">
-            <TextInput
-              label="Email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              aria-invalid={!!errors.email}
-              aria-describedby={errors.email ? "email-error" : undefined}
-            />
-            {errors.email && (
-              <p id="email-error" className="ui-body ui-status-error text-sm">
-                {errors.email}
-              </p>
-            )}
-          </div>
-          <label className="ui-field">
-            <span className="ui-label">Message</span>
-            <textarea
-              name="message"
-              rows={4}
-              className="ui-input ui-focusable py-2"
-              aria-invalid={!!errors.message}
-              aria-describedby={errors.message ? "message-error" : undefined}
-            />
-          </label>
-          {errors.message && (
-            <p id="message-error" className="ui-body ui-status-error -mt-3 text-sm">
-              {errors.message}
-            </p>
-          )}
-          <div className="flex items-center gap-4">
-            <Button type="submit" disabled={state === "sending"}>
-              {state === "sending" ? "Sending…" : "Send"}
-            </Button>
-            {state === "sending" && <span className="ui-spinner" aria-label="Sending" />}
-          </div>
-        </form>
-      )}
-    </div>
-  );
-}
-
 function Footer() {
   return (
     <footer className="border-t border-[var(--c-text)]">
@@ -306,7 +229,7 @@ function Footer() {
         <div className="flex flex-wrap gap-x-8 gap-y-3">
           <TextLink href="https://github.com/kenpiech">GitHub</TextLink>
           <TextLink href="https://github.com/kp145322">Early work on GitHub</TextLink>
-          <TextLink href="https://www.linkedin.com/in/kenneth-piech/">LinkedIn</TextLink>
+          <TextLink href={LINKEDIN}>LinkedIn</TextLink>
           <TextLink href="/">Design process</TextLink>
         </div>
         <p className="ui-label ui-muted">© 2026 Ken Piech</p>
@@ -317,12 +240,11 @@ function Footer() {
 
 export function Portfolio() {
   const [open, setOpen] = useState<string | null>(null);
-  const [contact, setContact] = useState(false);
   const project = projects.find((p) => p.slug === open);
 
   return (
     <div className="ui-root min-h-full flex-1" style={themeVars(swiss)}>
-      <Nav onContact={() => setContact(true)} />
+      <Nav />
       <main>
         <Hero />
         <Work onOpen={setOpen} />
@@ -332,9 +254,6 @@ export function Portfolio() {
 
       <Modal open={!!project} onClose={() => setOpen(null)} label={project?.title ?? "Case study"} variant="sheet">
         {project && <CaseStudy project={project} onClose={() => setOpen(null)} />}
-      </Modal>
-      <Modal open={contact} onClose={() => setContact(false)} label="Get in touch">
-        {contact && <Contact onClose={() => setContact(false)} />}
       </Modal>
     </div>
   );
