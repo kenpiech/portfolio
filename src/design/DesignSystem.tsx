@@ -260,7 +260,7 @@ export function DesignSystem({ theme, fontClasses }: { theme: Theme; fontClasses
                     <Badge>Public</Badge>
                     <Badge>Private</Badge>
                     <Badge>Team</Badge>
-                    <Badge>Research</Badge>
+                    <Badge>Analytics</Badge>
                   </div>
                 </Demo>
                 <Demo name="Detail panel">

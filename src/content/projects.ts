@@ -1,7 +1,7 @@
 // Featured projects. Class work stays private (plagiarism risk), so those
 // entries describe the work and never link to source.
 
-export type Category = "Systems" | "Security" | "Distributed" | "Research";
+export type Category = "Systems" | "Security" | "Distributed" | "Analytics";
 
 export type Project = {
   slug: string;
@@ -14,6 +14,7 @@ export type Project = {
   team?: string;
   visibility: "public" | "private";
   link?: string;
+  linkLabel?: string;
   highlights: string[];
 };
 
@@ -73,7 +74,7 @@ export const projects: Project[] = [
     title: "Electricity supply security in South Korea",
     summary:
       "Research quantifying South Korea's electricity supply security, with historical values and projections.",
-    categories: ["Research"],
+    categories: ["Analytics"],
     stack: ["R", "R Markdown"],
     year: "2021",
     context: "Independent research",
@@ -85,6 +86,24 @@ export const projects: Project[] = [
       "Compared historical supply security with projections under Korea’s 9th Basic Plan for electricity.",
     ],
   },
+  {
+    slug: "bellabeat",
+    title: "Fitness tracker analysis for Bellabeat",
+    summary:
+      "A case study for the Google Data Analytics Certificate: cleaning and analyzing Fitbit data in R to find usage trends for a wellness-tech company.",
+    categories: ["Analytics"],
+    stack: ["R", "tidyverse", "GGally", "R Markdown"],
+    year: "2021",
+    context: "Google Data Analytics Certificate",
+    visibility: "public",
+    link: "https://kp145322.github.io/Rprojects/",
+    linkLabel: "Read the full analysis →",
+    highlights: [
+      "Cleaned and merged daily activity and sleep logs from 33 Fitbit users, flagging days when a device wasn’t worn or charged.",
+      "Found that steps track closely with active minutes, and that more sedentary time goes with less sleep.",
+      "Turned the findings into product and marketing recommendations, with the sample’s limits stated up front.",
+    ],
+  },
 ];
 
-export const categories: Category[] = ["Systems", "Security", "Distributed", "Research"];
+export const categories: Category[] = ["Systems", "Security", "Distributed", "Analytics"];

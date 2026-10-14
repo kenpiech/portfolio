@@ -164,7 +164,7 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
       <h3 className="ui-label mt-10 border-t border-[var(--c-text)] pt-4">Code</h3>
       {project.link ? (
         <p className="ui-body mt-4">
-          <TextLink href={project.link}>View the code and data on GitHub →</TextLink>
+          <TextLink href={project.link}>{project.linkLabel ?? "View the code and data on GitHub →"}</TextLink>
         </p>
       ) : (
         <p className="ui-body mt-4">
@@ -177,7 +177,7 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
 
 function About() {
   const outside = [
-    ["Backpacking", "A week or more each year. Most recently the Arrigetch Peaks in Alaska, and Iceland."],
+    ["Backpacking", "≥1 week each year. Most recently the Laugavegur and Fimmvörðuháls Trail in Iceland, and Arrigetch Peaks in Alaska."],
     ["Open water swimming and triathlon", ""],
     ["Trail running", ""],
   ];
