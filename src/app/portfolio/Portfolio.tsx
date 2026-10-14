@@ -198,7 +198,7 @@ function About() {
           </p>
         </div>
         <div className="mt-12 md:col-span-9 md:col-start-4">
-          <h3 className="ui-label ui-muted mb-2">Outside work</h3>
+          <h3 className="ui-label ui-muted mb-2">Interests</h3>
           {outside.map(([name, detail]) => (
             <div
               key={name}
