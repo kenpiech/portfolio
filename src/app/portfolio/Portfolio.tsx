@@ -68,7 +68,7 @@ function Hero() {
       <h1 className="ui-display mt-4">Ken Piech</h1>
       <div className={`${GRID} mt-8`}>
         <p className="ui-heading md:col-span-8">
-          Technical threat investigator with a background in nuclear engineering, intelligence, and distributed systems.
+          Technical threat investigator with experience in systems programming and intelligence analysis.
         </p>
       </div>
       <dl className="mt-16 grid gap-6 border-t border-[var(--c-text)] pt-6 sm:grid-cols-3 sm:gap-8">
