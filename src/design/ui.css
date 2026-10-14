@@ -350,6 +350,16 @@
     background: var(--c-text);
     color: var(--c-bg);
   }
+  .ui-chip[aria-pressed="true"]:hover:not(:disabled),
+  .ui-chip[aria-pressed="true"][data-force="hover"],
+  .ui-btn[aria-pressed="true"]:hover:not(:disabled),
+  .ui-btn[aria-pressed="true"][data-force="hover"] {
+    /* Selected wins over hover; a slight fade is the hover feedback */
+    background: var(--c-text);
+    color: var(--c-bg);
+    border-color: var(--c-text);
+    opacity: 0.85;
+  }
   .ui-chip:disabled {
     background: var(--c-disabled-bg);
     color: var(--c-disabled-fg);
