@@ -168,8 +168,7 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
         </p>
       ) : (
         <p className="ui-body mt-4">
-          This was a class project, so the code stays private to protect future students’ work. I’m
-          happy to walk through it in an interview.
+          This was a class project in a private repo. I’m happy to walk through it one-to-one.
         </p>
       )}
     </article>
